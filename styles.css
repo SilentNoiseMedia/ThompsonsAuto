@@ -1,0 +1,710 @@
+      /* Universal */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Poppins;
+}
+
+header {
+  top: 0;
+  background-color: #111;
+}
+
+img {
+  align-self: center;
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/************************************/
+/************************************/
+/************************************/
+/* NAVBAR */
+
+.navbar {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  min-width: 300px;
+  max-width: 20%;
+  padding: 5px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s ease-out;
+  margin-right: 15px;
+}
+
+.navbar-links a:hover {
+  background: #ffcc33;
+  color: #333;
+}
+
+/************************************/
+/************************************/
+/************************************/
+/* HERO */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  min-height: 500px;
+  font-size: 2em;
+  background-image: url("https://i.imghippo.com/files/kpU3510hIw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+  width: 100%;
+}
+
+.hero-headline {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.hero-subheadline {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px;
+  color: #ffcc33;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  padding: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#btn-contact {
+    background-color: #FFCC33; /* Yellow */
+    color: #111; /* Black text */
+    border: 1px solid #fade23;
+}
+
+#btn-contact:hover {
+    background-color: #f5d67b; /* Yellow */
+    color: #383838; /* Yellow text */  
+    border: 1px solid #ffffff;
+}
+
+#btn-contact a {
+  color: #111; /* Black text */  
+}
+
+#btn-contact a:hover {
+  color: #383838; /* Yellow text */  
+}
+
+#btn-learnmore {
+    background-color: #222; 
+    color: #ffcc33; 
+    border: 1px solid #fade23;
+    font-weight: bold;
+}
+
+#btn-learnmore a {
+  color: #ffcc33; 
+}
+
+#btn-learnmore:hover {
+  background-color: #f5d67b; /* Yellow */
+  color: #EEEEEE; /* Yellow text */
+  border: 1px solid #ffffff;
+}
+
+.hero-list-container {
+    display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 20px;
+      width: 100%;
+      margin: 5px;
+}
+
+/************************************/
+/************************************/
+/************************************/
+/* SERVICES */
+
+.services {
+  background-color: #111;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 15px;
+  padding-bottom: 56px;
+  text-align: center;
+  line-height: 2px;
+}
+
+.services-headline {
+  background-color: #111;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.service-card-container {
+  display: flex-box;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.service-card {
+  display: flexbox;
+  align-content: center;
+  justify-content: space-between;
+  color: #000;
+  margin: 16px;
+  padding: 4px;
+  width: 16px;
+  height: auto;
+ /* border: solid 5px yellow;*/
+}
+
+.service-card2 {
+  display: flexbox;
+  align-content: center;
+  justify-content: space-between;
+  margin: 32px;
+  margin-bottom: 40px;
+  padding: 0px;
+  width: 400px;
+  height: auto;
+}
+
+/************************************/
+/************************************/
+/************************************/
+/* REVIEWS */
+
+.feedback {
+  background-color: #111;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  line-height: 2px;
+}
+
+.feedback-headline {
+  background-color: #111;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 15px;
+  /*border: solid blue;*/
+}
+
+.feedback-container {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  /*border: solid purple;*/
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #FFF;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 30%;
+  height: auto;
+  line-height: 28px;
+  word-spacing: 2px;
+  font-size: 20px;
+
+}
+
+/************************************/
+/************************************/
+/************************************/
+/* LOCATION */
+
+.location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #111;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0;
+  row-gap: 0;
+  column-gap: 0p;
+  padding: 0;
+  padding-bottom: 56px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  line-height: 2px;
+  /*border: solid 5px gold;*/
+}
+
+.location-headline {
+  background-color: #111;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 15px;
+  text-decoration: none;
+ /* border: solid pink;*/
+}
+
+.location p {
+  text-decoration: none;
+}
+
+.location a {
+  text-decoration: none;
+}
+/*ocation-container {
+  display: flex-box;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 100%;
+  border: solid green;
+}*/
+
+.location-box-left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /*align-self: flex-start;*/
+  justify-content: space-between;
+  color: #FFF;
+  margin: 10px 4px 4px 4px;
+  padding: 4px;
+  height: auto;
+  min-width: 240px;
+  width: 30%;
+  font-size: 24px;
+  text-decoration: none;
+  /*border: solid 5px red;*/
+}
+
+.location-box-left a {
+	word-wrap: break-word;
+	display: block;
+}
+
+.location-box-left img {
+	max-width: 50px;
+}
+
+.address {
+  display: flexbox;
+  justify-content: space-between;
+  align-content: center;
+  color: grey;
+  font-size: 20px;
+  width: 100%;
+  text-decoration: none;
+  /*border: solid maroon;*/
+}
+
+/*treet-town-state {
+  display: flexbox;
+  justify-content: space-between;
+  align-content: center;
+  padding: 8px;
+  height: auto;
+  text-decoration: none;
+  /*border: solid grey;
+}*/
+
+.location-container a {
+  text-decoration: underline;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.location-box-center {
+  display: flexbox;
+  align-content: center;
+  justify-content: space-between;
+  color: #000;
+  margin: 4px;
+  padding: 4px;
+  width: 33%;
+  height: auto;
+  text-decoration: none;
+  /*border: solid white;*/
+}
+
+.location-box-right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #000;
+  margin: 4px;
+  padding: 4px;
+  width: 33%;
+  height: auto;
+  text-decoration: none;
+  /*border: solid blue;*/
+}
+
+.location-box-right img {
+	max-width: 50px;
+}
+
+/*.address {
+  color: grey;
+  margin: 0 0 0 16px;;
+  font-size: 20px;
+  border: solid brown;
+}
+
+.location-container a {
+  text-decoration: underline;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0 0 0 20px;
+  border: solid yellow;
+}*/
+
+
+
+/*********************************/
+/************************************/
+/************************************/
+/* CONTACT */
+
+.contact {
+  background-color: #111;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  line-height: 2px;
+}
+
+.contact-headline {
+  background-color: #111;
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #111;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0;
+  row-gap: 0;
+  column-gap: 0p;
+  padding: 0;
+  padding-bottom: 56px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  line-height: 2px;
+}
+
+
+/************************************/
+/************************************/
+/************************************/
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social ul li {
+    list-style: none;
+}
+
+.social ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.social ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.social ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.social ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.social ul li a:hover:before {
+    top: 0;
+}
+
+.social ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.social ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.social ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.social ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+
+
+/* ID Selectors - Specifically Named, One-Time Use */
+
+#logo{
+  margin-right: 50px;
+}
+
+/* Interactive Elements - Hover, Click, etc. */
+
+
+/* Dynamic Resizing */
+
+
+@media all and (max-width: 800px) {
+  .navbar-links {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar-links, .location {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navbar-links a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navbar-links li:last-of-type a {
+    border-bottom: none;
+  }
+  
+}
+
+/* size reference:
+Smartphone: 320px
+Tablet: 768px
+Laptop: 1024px
+Desktop 1200px
+
+MOST COMMON NON-MOBILE:
+1366x768
+1920x1080
+1536x864
+
+MOST COMMON TABLET:
+768x1024
+1280x800
+800x1280
+
+MOST COMMON SMART PHONE:
+360x640
+414x896
+375x667
+
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+iPhone X:
+Portrait and Landscape 
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+Portrait 
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+Landscape 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+-----------------------------------
+GALAXY S6:
+
+Portrait and Landscape:
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+Portrait:
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+}
+
+Landscape:
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+
+}
+
+
+}
+
+*/
+
+/* Landscape-Vertical Mobile Switch 
+
+*/
+
+
+
+
