@@ -706,5 +706,90 @@ Landscape:
 */
 
 
+/* Reviews Section */
+.feedback-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+@media (max-width: 600px) {
+  .feedback-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+  }
+  .feedback-card {
+    width: 90%;
+    min-width: 220px;
+    text-align: center;
+  }
+}
 
+/* Location Section */
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+@media (max-width: 600px) {
+  .location {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location-box-left,
+  .location-box-center,
+  .location-box-right {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+  .location img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-card,
+  .testimonial-box, /* or whatever class your quote/message uses */
+  .service-card2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-box {
+    max-width: 50vw;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em; /* Optional: slightly smaller text for mobile */
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-card, .service-card2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* or a fixed max-width like 320px */
+    max-width: 120px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  .services, .testimonials, .feedback, .location {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 
